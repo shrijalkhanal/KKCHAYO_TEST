@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DocumentCard from '../../components/DocumentCard.astro';
+---
+
+<Layout title="Personal Documents">
+	<main>
+		<h1>Personal Documents</h1>
+		<p class="subtitle">Essential documents and requirements for Nepali citizens</p>
+		
+		<div class="card-grid">
+			<DocumentCard
+				title="Citizenship"
+				description="Requirements and process for obtaining Nepali citizenship"
+				href="/personal-documents/citizenship"
+			/>
+			<DocumentCard
+				title="National ID"
+				description="Process for getting your Rastriya Parichaya Patra"
+				href="/personal-documents/national-id"
+			/>
+			<DocumentCard
+				title="Passport"
+				description="Process for getting your Nepali passport"
+				href="/personal-documents/passport"
+			/>
+			<DocumentCard
+				title="Driving License"
+				description="Steps to obtain your driving license"
+				href="/personal-documents/driving-license"
+			/>
+			<DocumentCard
+				title="NOC"
+				description="No-Objection Certificate application process"
+				href="/personal-documents/noc"
+			/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.subtitle {
+		text-align: center;
+		margin-bottom: 3rem;
+		color: #666;
+		font-size: 1.2rem;
+	}
+
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.card-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

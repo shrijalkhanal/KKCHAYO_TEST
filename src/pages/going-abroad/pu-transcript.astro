@@ -1,0 +1,132 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="PU Transcript Process">
+	<main>
+		<h1>Getting Transcript from Pokhara University</h1>
+		
+		<section class="content">
+			<h2>Required Documents</h2>
+			<ul>
+				<li>Original mark sheets of all semesters</li>
+				<li>Original provisional certificate</li>
+				<li>Original character certificate</li>
+				<li>Citizenship certificate (original and photocopy)</li>
+				<li>Recent passport-size photographs</li>
+				<li>Bank voucher of transcript fee payment</li>
+			</ul>
+
+			<h2>Process Steps</h2>
+			<ol>
+				<li>Visit the Office of the Controller of Examinations, PU</li>
+				<li>Collect and fill out the transcript application form</li>
+				<li>Pay the transcript fee at the specified bank</li>
+				<li>Submit all required documents with bank voucher</li>
+				<li>Collect the receipt</li>
+				<li>Collect transcript on the specified date</li>
+			</ol>
+
+			<div class="location">
+				<h2>Office Location</h2>
+				<div class="location-card">
+					<h3>Pokhara University Central Office</h3>
+					<p>Office of the Controller of Examinations</p>
+					<p>Pokhara University, Dhungepatan, Pokhara</p>
+					<a href="https://maps.app.goo.gl/dQFHKLGCsZFjQu5w9" target="_blank" class="map-link">View on Google Maps</a>
+				</div>
+			</div>
+
+			<div class="fees">
+				<h3>Transcript Fees:</h3>
+				<ul>
+					<li>Regular Processing: NPR 1,200 per copy</li>
+					<li>Express Service: NPR 2,400 per copy</li>
+					<li>Additional copies: NPR 600 each</li>
+				</ul>
+			</div>
+
+			<div class="note">
+				<h3>Important Notes:</h3>
+				<p>Processing time: 5-7 working days for regular service</p>
+				<p>Express service available (2-3 working days)</p>
+				<p>All original documents must be presented for verification</p>
+				<p>Personal presence is mandatory</p>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	h2 {
+		color: var(--primary-color);
+		margin: 2rem 0 1rem;
+	}
+
+	ul, ol {
+		margin-left: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+
+	.fees, .note {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin-top: 2rem;
+	}
+
+	.fees h3, .note h3 {
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	.location-card {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+	.location-card h3 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.location-card p {
+		margin-bottom: 0.5rem;
+		color: #666;
+	}
+
+	.map-link {
+		display: inline-block;
+		background: var(--secondary-color);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 4px;
+		text-decoration: none;
+		margin-top: 0.5rem;
+		transition: background-color 0.3s ease;
+	}
+
+	.map-link:hover {
+		background: #2980b9;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

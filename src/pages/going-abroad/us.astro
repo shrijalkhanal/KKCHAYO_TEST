@@ -1,0 +1,92 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Study in USA">
+	<main>
+		<h1>Study in United States Guide</h1>
+		
+		<section class="content">
+			<h2>Requirements</h2>
+			<ul>
+				<li>Valid passport</li>
+				<li>I-20 form from university</li>
+				<li>TOEFL/IELTS scores</li>
+				<li>SAT/ACT/GRE/GMAT (as required)</li>
+				<li>Academic transcripts</li>
+				<li>Statement of Purpose</li>
+				<li>Financial documents</li>
+				<li>Bank statements</li>
+			</ul>
+
+			<h2>Application Process</h2>
+			<ol>
+				<li>Research and select universities</li>
+				<li>Take required standardized tests</li>
+				<li>Apply to chosen universities</li>
+				<li>Accept admission and receive I-20</li>
+				<li>Pay SEVIS fee</li>
+				<li>Apply for F-1 student visa</li>
+				<li>Arrange accommodation</li>
+			</ol>
+
+			<div class="costs">
+				<h3>Estimated Costs</h3>
+				<ul>
+					<li>Tuition fees: $20,000 - $60,000 per year</li>
+					<li>Living expenses: $12,000 - $18,000 per year</li>
+					<li>SEVIS fee: $350</li>
+					<li>Visa application: $160</li>
+				</ul>
+			</div>
+
+			<div class="note">
+				<h3>Important Notes:</h3>
+				<p>Apply early (9-12 months before start date)</p>
+				<p>Work restrictions: 20 hours/week on-campus during semester</p>
+				<p>OPT available post-graduation (12-36 months)</p>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	h2 {
+		color: var(--primary-color);
+		margin: 2rem 0 1rem;
+	}
+
+	ul, ol {
+		margin-left: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+
+	.costs, .note {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin-top: 2rem;
+	}
+
+	.costs h3, .note h3 {
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

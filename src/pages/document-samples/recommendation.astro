@@ -1,0 +1,130 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Recommendation Letter Samples">
+	<main>
+		<h1>Recommendation Letter Samples</h1>
+		
+		<section class="content">
+			<div class="sample">
+				<h2>Academic Recommendation Letter Sample</h2>
+				<pre class="sample-text">
+[University Letterhead]
+[Date]
+
+To Whom It May Concern:
+
+I am writing to strongly recommend [Student Name] for admission to your [Program Name] program. As [Student Name]'s professor in [Subject] at [Current University], I have had the pleasure of teaching and observing their academic progress over the past [duration].
+
+[Student Name] has consistently demonstrated exceptional analytical abilities and a strong work ethic. Their performance in my [Course Name] class placed them in the top 5% of students I have taught in my [number] years of teaching. Their final project on [Project Topic] showed remarkable insight and innovation.
+
+What sets [Student Name] apart is not just their academic excellence, but also their ability to collaborate effectively with peers and contribute meaningfully to class discussions. They have shown great leadership potential through their role as [any leadership position].
+
+I am confident that [Student Name] would be an outstanding addition to your program. Please feel free to contact me if you need any additional information.
+
+Sincerely,
+[Professor's Name]
+[Title/Position]
+[Contact Information]</pre>
+			</div>
+
+			<div class="tips">
+				<h3>Key Components:</h3>
+				<ul>
+					<li>Professional letterhead</li>
+					<li>Clear relationship context</li>
+					<li>Specific examples of excellence</li>
+					<li>Personal qualities and achievements</li>
+					<li>Strong endorsement</li>
+					<li>Contact information</li>
+				</ul>
+			</div>
+
+			<div class="locations">
+				<h2>Document Processing Centers</h2>
+				<div class="location-grid">
+					<div class="location-card">
+						<h3>TU Central Office</h3>
+						<p>Kirtipur, Kathmandu</p>
+						<p>Phone: +977-1-4330433</p>
+					</div>
+					<div class="location-card">
+						<h3>KU Document Section</h3>
+						<p>Dhulikhel, Kavre</p>
+						<p>Phone: +977-11-415100</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.sample {
+		margin-bottom: 2rem;
+	}
+
+	.sample-text {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		white-space: pre-wrap;
+		font-family: monospace;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		overflow-x: auto;
+	}
+
+	.tips {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin: 2rem 0;
+	}
+
+	.tips ul {
+		margin-left: 1.5rem;
+	}
+
+	.tips li {
+		margin-bottom: 0.5rem;
+	}
+
+	.location-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.location-card {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.location-card h3 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.location-card p {
+		margin-bottom: 0.5rem;
+		color: #666;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

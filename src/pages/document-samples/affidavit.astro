@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Affidavit Samples">
+	<main>
+		<h1>Affidavit Samples</h1>
+		
+		<section class="content">
+			<div class="sample">
+				<h2>General Affidavit Format</h2>
+				<pre class="sample-text">
+AFFIDAVIT
+
+I, [Full Name], son/daughter of [Father's Name], aged [Age] years, resident of [Full Address], do hereby solemnly affirm and declare as follows:
+
+1. That I am a permanent resident of the above-mentioned address.
+2. That the statements made herein below are true to the best of my knowledge and belief:
+   [Statement 1]
+   [Statement 2]
+   [Statement 3]
+
+3. That I am making this affidavit to produce before [Authority Name] for [Purpose].
+
+VERIFICATION:
+Verified at [Place] on this [Date] that the contents of the above affidavit are true and correct to the best of my knowledge and belief.
+
+DEPONENT
+
+Sworn before me on [Date]
+[Notary Details]</pre>
+			</div>
+
+			<div class="note">
+				<h3>Important Notes:</h3>
+				<ul>
+					<li>Must be printed on stamp paper of appropriate value</li>
+					<li>Should be notarized by authorized notary public</li>
+					<li>All details must be accurate and verifiable</li>
+					<li>Any false statement can lead to legal consequences</li>
+				</ul>
+			</div>
+
+			<div class="locations">
+				<h2>Notary Locations in Kathmandu</h2>
+				<div class="location-grid">
+					<div class="location-card">
+						<h3>Supreme Court Area</h3>
+						<p>Ramshah Path, Kathmandu</p>
+						<p>Phone: +977-1-4220543</p>
+					</div>
+					<div class="location-card">
+						<h3>District Court Area</h3>
+						<p>Babarmahal, Kathmandu</p>
+						<p>Phone: +977-1-4262648</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.sample {
+		margin-bottom: 2rem;
+	}
+
+	.sample-text {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		white-space: pre-wrap;
+		font-family: monospace;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		overflow-x: auto;
+	}
+
+	.note {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin: 2rem 0;
+	}
+
+	.location-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.location-card {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.location-card h3 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.location-card p {
+		margin-bottom: 0.5rem;
+		color: #666;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

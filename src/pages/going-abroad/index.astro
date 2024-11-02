@@ -1,0 +1,129 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DocumentCard from '../../components/DocumentCard.astro';
+---
+
+<Layout title="Study Abroad">
+	<main>
+		<h1>Study Abroad Guide</h1>
+		<p class="subtitle">Comprehensive guides for studying in different countries</p>
+		
+		<div class="card-grid">
+			<DocumentCard
+				title="Study in Australia"
+				description="Complete guide for Nepali students planning to study in Australia"
+				href="/going-abroad/australia"
+			/>
+			<DocumentCard
+				title="Study in UK"
+				description="Requirements and process for studying in the United Kingdom"
+				href="/going-abroad/uk"
+			/>
+			<DocumentCard
+				title="Study in USA"
+				description="Guide to pursuing education in the United States"
+				href="/going-abroad/us"
+			/>
+		</div>
+
+		<section class="requirements">
+			<h2>Essential Requirements</h2>
+			<div class="card-grid">
+				<DocumentCard
+					title="TU Transcript"
+					description="Steps to obtain transcript from Tribhuvan University"
+					href="/going-abroad/transcript"
+				/>
+				<DocumentCard
+					title="KU Transcript"
+					description="Process for obtaining transcript from Kathmandu University"
+					href="/going-abroad/ku-transcript"
+				/>
+				<DocumentCard
+					title="PU Transcript"
+					description="Guide to getting transcript from Pokhara University"
+					href="/going-abroad/pu-transcript"
+				/>
+				<DocumentCard
+					title="IELTS Procedure"
+					description="Complete guide to IELTS registration and preparation"
+					href="/going-abroad/ielts"
+				/>
+				<DocumentCard
+					title="PTE Procedure"
+					description="Guide to PTE Academic registration and exam process"
+					href="/going-abroad/pte"
+				/>
+			</div>
+		</section>
+
+		<section class="general-requirements">
+			<h2>General Requirements for Studying Abroad</h2>
+			<ul>
+				<li>Valid passport</li>
+				<li>Academic transcripts</li>
+				<li>English language proficiency test scores (IELTS/TOEFL/PTE)</li>
+				<li>Statement of purpose</li>
+				<li>Letters of recommendation</li>
+				<li>Financial documents</li>
+				<li>No Objection Certificate (NOC)</li>
+			</ul>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.subtitle {
+		text-align: center;
+		margin-bottom: 3rem;
+		color: #666;
+		font-size: 1.2rem;
+	}
+
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.requirements {
+		margin: 4rem 0;
+	}
+
+	.requirements h2 {
+		color: var(--primary-color);
+		margin-bottom: 2rem;
+	}
+
+	.general-requirements {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.general-requirements h2 {
+		color: var(--primary-color);
+		margin-bottom: 1.5rem;
+	}
+
+	.general-requirements ul {
+		margin-left: 1.5rem;
+	}
+
+	.general-requirements li {
+		margin-bottom: 0.5rem;
+		color: #666;
+	}
+
+	@media (max-width: 768px) {
+		.card-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.general-requirements {
+			padding: 1rem;
+		}
+	}
+</style>

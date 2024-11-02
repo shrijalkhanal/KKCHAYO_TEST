@@ -1,0 +1,143 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Bank Statement Samples">
+	<main>
+		<h1>Bank Statement Samples</h1>
+		
+		<section class="content">
+			<div class="sample">
+				<h2>Sample Bank Statement Format</h2>
+				<pre class="sample-text">
+[Bank Logo and Name]
+[Bank Branch Address]
+Phone: [Branch Phone Number]
+
+BANK STATEMENT
+
+Account Holder: [Full Name]
+Account Number: XXXX-XXXX-XXXX-1234
+Statement Period: [Start Date] to [End Date]
+Currency: NPR
+
+Transaction Details:
+--------------------------------------------------------------------------------
+Date       | Description                    | Debit      | Credit     | Balance
+--------------------------------------------------------------------------------
+01/01/2024 | Opening Balance               |            |            | 1,500,000
+05/01/2024 | Salary Credit                 |            |  150,000   | 1,650,000
+10/01/2024 | ATM Withdrawal               | 25,000     |            | 1,625,000
+15/01/2024 | Fixed Deposit Interest        |            |   50,000   | 1,675,000
+20/01/2024 | Online Transfer              | 100,000    |            | 1,575,000
+25/01/2024 | Dividend Credit               |            |   75,000   | 1,650,000
+31/01/2024 | Closing Balance               |            |            | 1,650,000
+--------------------------------------------------------------------------------
+
+This is a computer-generated statement and requires no signature.
+For any queries, please contact your branch or call [Bank's Customer Service Number].</pre>
+			</div>
+
+			<div class="requirements">
+				<h3>Bank Statement Requirements for Visa:</h3>
+				<ul>
+					<li>Must show last 6 months of transactions</li>
+					<li>Should be stamped and signed by bank official</li>
+					<li>Must show sufficient funds as per visa requirements</li>
+					<li>Should be in English or officially translated</li>
+					<li>Must be recent (within last 15 days)</li>
+				</ul>
+			</div>
+
+			<div class="locations">
+				<h2>Major Bank Branches</h2>
+				<div class="location-grid">
+					<div class="location-card">
+						<h3>Nepal Bank Limited</h3>
+						<p>New Road, Kathmandu</p>
+						<p>Phone: +977-1-4245730</p>
+					</div>
+					<div class="location-card">
+						<h3>Nabil Bank</h3>
+						<p>Kamaladi, Kathmandu</p>
+						<p>Phone: +977-1-4429546</p>
+					</div>
+					<div class="location-card">
+						<h3>NIC Asia Bank</h3>
+						<p>Thapathali, Kathmandu</p>
+						<p>Phone: +977-1-5111177</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.sample {
+		margin-bottom: 2rem;
+	}
+
+	.sample-text {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		white-space: pre-wrap;
+		font-family: monospace;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		overflow-x: auto;
+	}
+
+	.requirements {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin: 2rem 0;
+	}
+
+	.requirements ul {
+		margin-left: 1.5rem;
+	}
+
+	.requirements li {
+		margin-bottom: 0.5rem;
+	}
+
+	.location-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.location-card {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.location-card h3 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.location-card p {
+		margin-bottom: 0.5rem;
+		color: #666;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

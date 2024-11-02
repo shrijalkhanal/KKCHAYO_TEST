@@ -1,0 +1,132 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Passport Sample">
+	<main>
+		<h1>Nepali Passport Sample</h1>
+		
+		<section class="content">
+			<div class="sample-images">
+				<div class="image-container">
+					<img src="/samples/passport-cover.jpg" alt="Sample Passport Cover" class="sample-image" />
+					<p class="caption">Nepali passport cover</p>
+				</div>
+				<div class="image-container">
+					<img src="/samples/passport-bio.jpg" alt="Sample Passport Bio Page" class="sample-image" />
+					<p class="caption">Passport bio-data page</p>
+				</div>
+				<div class="image-container">
+					<img src="/samples/passport-visa.jpg" alt="Sample Passport Visa Page" class="sample-image" />
+					<p class="caption">Passport visa page</p>
+				</div>
+			</div>
+
+			<div class="note">
+				<h3>Important Notes:</h3>
+				<ul>
+					<li>Machine-readable passport (MRP)</li>
+					<li>Contains biometric data</li>
+					<li>32 pages for regular passport</li>
+					<li>Valid for 10 years from issue date</li>
+				</ul>
+			</div>
+
+			<div class="contact">
+				<h2>Contact Information</h2>
+				<div class="contact-grid">
+					<div class="contact-card">
+						<h3>Nepal Office</h3>
+						<p>Kathmandu, Nepal</p>
+						<p>Phone: +977 9841852375</p>
+						<p>WhatsApp: +44 7570403939</p>
+					</div>
+					<div class="contact-card">
+						<h3>UK Office</h3>
+						<p>London, United Kingdom</p>
+						<p>Phone: +977 9841852375</p>
+						<p>WhatsApp: +44 7570403939</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.sample-images {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.image-container {
+		text-align: center;
+	}
+
+	.sample-image {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.caption {
+		margin-top: 1rem;
+		color: #666;
+		font-size: 0.9rem;
+	}
+
+	.note {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin: 2rem 0;
+	}
+
+	.note ul {
+		margin-left: 1.5rem;
+	}
+
+	.note li {
+		margin-bottom: 0.5rem;
+	}
+
+	.contact-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.contact-card {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.contact-card h3 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.contact-card p {
+		margin-bottom: 0.5rem;
+		color: #666;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

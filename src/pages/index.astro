@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DocumentCard from '../components/DocumentCard.astro';
+---
+
+<Layout title="Home">
+	<h1>Welcome to KKCHAYO</h1>
+	<p class="subtitle">Your guide to essential documents and procedures in Nepal</p>
+	
+	<section class="card-section">
+		<h2>Essential Documents</h2>
+		<div class="card-grid">
+			<DocumentCard
+				title="Citizenship"
+				description="Learn about the requirements and process for obtaining Nepali citizenship"
+				href="/personal-documents/citizenship"
+			/>
+			<DocumentCard
+				title="Passport"
+				description="Everything you need to know about getting your Nepali passport"
+				href="/personal-documents/passport"
+			/>
+			<DocumentCard
+				title="Driving License"
+				description="Guide to obtaining your driving license in Nepal"
+				href="/personal-documents/driving-license"
+			/>
+			<DocumentCard
+				title="NOC"
+				description="Process for obtaining No-Objection Certificate"
+				href="/personal-documents/noc"
+			/>
+		</div>
+	</section>
+
+	<section class="study-abroad">
+		<h2>Planning to Study Abroad?</h2>
+		<p>Explore our comprehensive guides for studying in:</p>
+		<div class="country-buttons">
+			<a href="/going-abroad/australia" class="button">Australia</a>
+			<a href="/going-abroad/uk" class="button">United Kingdom</a>
+			<a href="/going-abroad/us" class="button">United States</a>
+		</div>
+	</section>
+
+	<section class="card-section">
+		<h2>Study Abroad Requirements</h2>
+		<div class="card-grid">
+			<DocumentCard
+				title="TU Transcript"
+				description="Steps to obtain transcript from Tribhuvan University"
+				href="/going-abroad/transcript"
+			/>
+			<DocumentCard
+				title="IELTS Procedure"
+				description="Complete guide to IELTS registration and preparation"
+				href="/going-abroad/ielts"
+			/>
+			<DocumentCard
+				title="PTE Procedure"
+				description="Guide to PTE Academic registration and exam process"
+				href="/going-abroad/pte"
+			/>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	h1 {
+		text-align: center;
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	.subtitle {
+		text-align: center;
+		margin-bottom: 3rem;
+		color: #666;
+		font-size: 1.2rem;
+	}
+
+	.card-section {
+		margin-bottom: 4rem;
+	}
+
+	.card-section h2 {
+		color: var(--primary-color);
+		margin-bottom: 2rem;
+		font-size: 1.8rem;
+	}
+
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.study-abroad {
+		text-align: center;
+		padding: 2rem;
+		background: white;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		margin-bottom: 4rem;
+	}
+
+	.study-abroad h2 {
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	.country-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 1.5rem;
+	}
+
+	.button {
+		background: var(--secondary-color);
+		color: white;
+		padding: 0.8rem 1.5rem;
+		border-radius: 4px;
+		text-decoration: none;
+		transition: background-color 0.3s ease;
+	}
+
+	.button:hover {
+		background: #2980b9;
+	}
+
+	@media (max-width: 768px) {
+		.card-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.country-buttons {
+			flex-direction: column;
+		}
+
+		.button {
+			width: 100%;
+			text-align: center;
+		}
+	}
+</style>

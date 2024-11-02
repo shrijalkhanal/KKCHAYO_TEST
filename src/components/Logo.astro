@@ -1,0 +1,38 @@
+---
+interface Props {
+  width?: number;
+  height?: number;
+}
+
+const { width = 60, height = 25} = Astro.props;
+---
+
+<div class="logo-container">
+  <a href="/" class="logo-link">
+    <img 
+      src="src/components/img/kk.png" 
+      alt="KKCHAYO Logo" 
+      width={width} 
+      height={height} 
+      class="logo-image"
+    />
+  </a>
+</div>
+
+<style>
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-link {
+    display: block;
+    text-decoration: none;
+  }
+
+  .logo-image {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+  }
+</style>

@@ -1,0 +1,108 @@
+---
+interface Props {
+  className?: string;
+  ads?: {
+    imageUrl: string;
+    link: string;
+    altText: string;
+  }[];
+}
+
+const { className = '', ads = [
+  {
+    imageUrl: 'https://via.placeholder.com/728x90',
+    link: 'https://example.com',
+    altText: 'Advertisement'
+  }
+] } = Astro.props;
+---
+
+<section class={`advertisement ${className}`}>
+  <div class="ad-container">
+    {ads.length > 0 ? (
+      <div class="ad-grid">
+        {ads.map(ad => (
+          <a href={ad.link} target="_blank" rel="noopener noreferrer" class="ad-link">
+            <img 
+              src={ad.imageUrl} 
+              alt={ad.altText}
+              class="ad-image"
+              loading="lazy"
+            />
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="ad-placeholder">
+        Advertisement Space Available
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .advertisement {
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #f8f9fa;
+  }
+
+  .ad-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .ad-link {
+    display: block;
+    width: 100%;
+    max-width: 728px;
+    transition: transform 0.2s ease;
+  }
+
+  .ad-link:hover {
+    transform: translateY(-2px);
+  }
+
+  .ad-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .ad-placeholder {
+    background: white;
+    border: 2px dashed #ccc;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    color: #666;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .advertisement {
+      padding: 0.5rem;
+    }
+    
+    .ad-placeholder {
+      height: 60px;
+      padding: 1rem;
+    }
+
+    .ad-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

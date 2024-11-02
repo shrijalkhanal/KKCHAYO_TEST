@@ -1,0 +1,101 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="IELTS Procedure">
+	<main>
+		<h1>IELTS Registration and Procedure</h1>
+		
+		<section class="content">
+			<h2>Types of IELTS</h2>
+			<ul>
+				<li>IELTS Academic - For higher education and professional registration</li>
+				<li>IELTS General Training - For work experience or migration</li>
+				<li>IELTS UKVI - For UK visa and immigration</li>
+			</ul>
+
+			<h2>Registration Process</h2>
+			<ol>
+				<li>Visit the official British Council or IDP website</li>
+				<li>Create an account and fill the registration form</li>
+				<li>Choose test date, time, and venue</li>
+				<li>Upload required documents:
+					<ul>
+						<li>Passport copy</li>
+						<li>Passport-size photograph</li>
+					</ul>
+				</li>
+				<li>Pay the test fee</li>
+				<li>Receive confirmation email</li>
+			</ol>
+
+			<div class="test-format">
+				<h3>Test Format</h3>
+				<ul>
+					<li>Listening (40 minutes) - 4 sections, 40 questions</li>
+					<li>Reading (60 minutes) - 3 sections, 40 questions</li>
+					<li>Writing (60 minutes) - 2 tasks</li>
+					<li>Speaking (11-14 minutes) - Face-to-face interview</li>
+				</ul>
+			</div>
+
+			<div class="fees">
+				<h3>Test Fees:</h3>
+				<ul>
+					<li>Paper-based test: NPR 25,500</li>
+					<li>Computer-delivered test: NPR 25,500</li>
+					<li>UKVI test: Additional charges apply</li>
+				</ul>
+			</div>
+
+			<div class="note">
+				<h3>Important Notes:</h3>
+				<p>Results available 13 calendar days after the test</p>
+				<p>Valid for 2 years from the test date</p>
+				<p>Free access to preparation materials after registration</p>
+				<p>Arrive at least 1 hour before the test time</p>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	h2 {
+		color: var(--primary-color);
+		margin: 2rem 0 1rem;
+	}
+
+	ul, ol {
+		margin-left: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+
+	.test-format, .fees, .note {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin-top: 2rem;
+	}
+
+	.test-format h3, .fees h3, .note h3 {
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DocumentCard from '../../components/DocumentCard.astro';
+---
+
+<Layout title="Document Samples">
+	<main>
+		<h1>Document Samples</h1>
+		<p class="subtitle">Reference samples of commonly required documents</p>
+		
+		<div class="card-grid">
+			<DocumentCard
+				title="Citizenship Sample"
+				description="Sample of Nepali citizenship certificate"
+				href="/document-samples/citizenship"
+			/>
+			<DocumentCard
+				title="Passport Sample"
+				description="Sample of Nepali passport pages"
+				href="/document-samples/passport"
+			/>
+			<DocumentCard
+				title="Driving License Sample"
+				description="Sample of Nepali driving license"
+				href="/document-samples/driving-license"
+			/>
+			<DocumentCard
+				title="IELTS Result Sample"
+				description="Sample IELTS test report form"
+				href="/document-samples/ielts-result"
+			/>
+			<DocumentCard
+				title="PTE Result Sample"
+				description="Sample PTE Academic score report"
+				href="/document-samples/pte-result"
+			/>
+			<DocumentCard
+				title="CV/Resume Templates"
+				description="Professional CV/Resume templates"
+				href="/document-samples/cv-resume"
+			/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.subtitle {
+		text-align: center;
+		margin-bottom: 3rem;
+		color: #666;
+		font-size: 1.2rem;
+	}
+
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.card-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

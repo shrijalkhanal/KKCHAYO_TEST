@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Study in UK">
+	<main>
+		<h1>Study in United Kingdom Guide</h1>
+		
+		<section class="content">
+			<h2>Requirements</h2>
+			<ul>
+				<li>Valid passport</li>
+				<li>CAS (Confirmation of Acceptance for Studies)</li>
+				<li>IELTS Academic score (usually 6.5 overall)</li>
+				<li>Academic transcripts</li>
+				<li>Personal statement</li>
+				<li>Financial proof (tuition + living costs)</li>
+				<li>TB test certificate</li>
+			</ul>
+
+			<h2>Application Process</h2>
+			<ol>
+				<li>Choose course and university</li>
+				<li>Apply through UCAS or directly to university</li>
+				<li>Receive and accept offer</li>
+				<li>Pay deposit and receive CAS</li>
+				<li>Apply for Student visa</li>
+				<li>Book accommodation</li>
+			</ol>
+
+			<div class="costs">
+				<h3>Estimated Costs</h3>
+				<ul>
+					<li>Tuition fees: £12,000 - £35,000 per year</li>
+					<li>Living costs: £12,000 per year (London: £15,000)</li>
+					<li>Visa application: £348</li>
+					<li>Healthcare surcharge: £470 per year</li>
+				</ul>
+			</div>
+
+			<div class="note">
+				<h3>Important Notes:</h3>
+				<p>Visa processing time: 3-4 weeks</p>
+				<p>Work rights: Up to 20 hours per week during term</p>
+				<p>Graduate route visa available (2 years post-study)</p>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	h2 {
+		color: var(--primary-color);
+		margin: 2rem 0 1rem;
+	}
+
+	ul, ol {
+		margin-left: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+
+	.costs, .note {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin-top: 2rem;
+	}
+
+	.costs h3, .note h3 {
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

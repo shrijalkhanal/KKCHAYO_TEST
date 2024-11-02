@@ -1,0 +1,191 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="National ID Requirements">
+	<main>
+		<h1>National ID (Rastriya Parichaya Patra) Requirements</h1>
+		
+		<section class="content">
+			<div class="online-registration">
+				<h2>Online Registration</h2>
+				<p>You can start your application process online through the official National ID portal:</p>
+				<a href="https://nid.gov.np" target="_blank" class="register-link">Register for National ID</a>
+			</div>
+
+			<h2>Required Documents</h2>
+			<ul>
+				<li>Original citizenship certificate and photocopy</li>
+				<li>Recent passport-size color photographs (35x45mm)</li>
+				<li>Birth registration certificate</li>
+				<li>Marriage certificate (if applicable)</li>
+				<li>Biometric data (fingerprints, photo, signature)</li>
+				<li>Mobile number registered in your name</li>
+				<li>Email address</li>
+			</ul>
+
+			<h2>Process</h2>
+			<ol>
+				<li>Fill out the online application form at <a href="https://nid.gov.np" target="_blank">nid.gov.np</a></li>
+				<li>Get an appointment date and token number</li>
+				<li>Visit the National ID Management Center with required documents</li>
+				<li>Provide biometric data (photo, fingerprints)</li>
+				<li>Verify your documents</li>
+				<li>Collect your National ID card on the specified date</li>
+			</ol>
+
+			<div class="locations">
+				<h2>Office Locations</h2>
+				<div class="location-grid">
+					<div class="location-card">
+						<h3>National ID Management Center</h3>
+						<p>Singha Durbar, Kathmandu</p>
+						<a href="https://maps.app.goo.gl/wNKqL8tJLiK2LFWP7" target="_blank" class="map-link">View on Google Maps</a>
+					</div>
+					<div class="location-card">
+						<h3>District Administration Office, Lalitpur</h3>
+						<p>Pulchowk, Lalitpur</p>
+						<a href="https://maps.app.goo.gl/YvtxDEgmFwXGgv8y7" target="_blank" class="map-link">View on Google Maps</a>
+					</div>
+					<div class="location-card">
+						<h3>District Administration Office, Bhaktapur</h3>
+						<p>Suryabinayak, Bhaktapur</p>
+						<a href="https://maps.app.goo.gl/wHxvYGQFXbdKuPmS8" target="_blank" class="map-link">View on Google Maps</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="features">
+				<h3>Features of National ID</h3>
+				<ul>
+					<li>Smart card with embedded chip</li>
+					<li>Unique identification number</li>
+					<li>Biometric data storage</li>
+					<li>Digital signature capability</li>
+					<li>Access to government services</li>
+					<li>Enhanced security features</li>
+				</ul>
+			</div>
+
+			<div class="note">
+				<h3>Important Notes:</h3>
+				<p>Processing time: 15-30 days after biometric data collection</p>
+				<p>Personal presence is mandatory for biometric data collection</p>
+				<p>No fee is currently charged for the first-time issuance</p>
+				<p>Keep your token number safe for status tracking</p>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	h2 {
+		color: var(--primary-color);
+		margin: 2rem 0 1rem;
+	}
+
+	ul, ol {
+		margin-left: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+
+	.online-registration {
+		background: #e8f4fd;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	.register-link {
+		display: inline-block;
+		background: var(--secondary-color);
+		color: white;
+		padding: 0.8rem 1.5rem;
+		border-radius: 4px;
+		text-decoration: none;
+		margin-top: 1rem;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+	}
+
+	.register-link:hover {
+		background: #2980b9;
+	}
+
+	.features, .note {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin-top: 2rem;
+	}
+
+	.features h3, .note h3 {
+		color: var(--primary-color);
+		margin-bottom: 1rem;
+	}
+
+	.location-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.location-card {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.location-card h3 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.location-card p {
+		margin-bottom: 1rem;
+		color: #666;
+	}
+
+	.map-link {
+		display: inline-block;
+		background: var(--secondary-color);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 4px;
+		text-decoration: none;
+		transition: background-color 0.3s ease;
+	}
+
+	.map-link:hover {
+		background: #2980b9;
+	}
+
+	a {
+		color: var(--secondary-color);
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

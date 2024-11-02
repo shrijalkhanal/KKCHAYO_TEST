@@ -1,0 +1,98 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Driving License Sample">
+	<main>
+		<h1>Nepali Driving License Sample</h1>
+		
+		<section class="content">
+			<div class="sample-images">
+				<div class="image-container">
+					<img src="/samples/license-front.jpg" alt="Sample Driving License Front" class="sample-image" />
+					<p class="caption">Front side of Nepali driving license</p>
+				</div>
+				<div class="image-container">
+					<img src="/samples/license-back.jpg" alt="Sample Driving License Back" class="sample-image" />
+					<p class="caption">Back side of Nepali driving license</p>
+				</div>
+			</div>
+
+			<div class="note">
+				<h3>Important Notes:</h3>
+				<ul>
+					<li>Smart card with embedded chip</li>
+					<li>Contains digital photograph and signature</li>
+					<li>Vehicle categories clearly indicated</li>
+					<li>Valid for 5 years from issue date</li>
+					<li>Contains unique license number</li>
+					<li>Written in both Nepali and English</li>
+				</ul>
+			</div>
+
+			<div class="categories">
+				<h3>License Categories:</h3>
+				<ul>
+					<li>Category A: Two-wheelers</li>
+					<li>Category B: Car, Jeep, Delivery Van</li>
+					<li>Category C: Public transport vehicles</li>
+					<li>Category D: Heavy equipment</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.sample-images {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.image-container {
+		text-align: center;
+	}
+
+	.sample-image {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.caption {
+		margin-top: 1rem;
+		color: #666;
+		font-size: 0.9rem;
+	}
+
+	.note, .categories {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin: 2rem 0;
+	}
+
+	.note ul, .categories ul {
+		margin-left: 1.5rem;
+	}
+
+	.note li, .categories li {
+		margin-bottom: 0.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>

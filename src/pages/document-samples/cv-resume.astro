@@ -1,0 +1,159 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="CV/Resume Samples">
+	<main>
+		<h1>CV/Resume Samples</h1>
+		
+		<section class="content">
+			<div class="sample">
+				<h2>Professional CV Sample</h2>
+				<pre class="sample-text">
+[Full Name]
+[Address]
+[Phone Number]
+[Email]
+[LinkedIn Profile]
+
+PROFESSIONAL SUMMARY
+------------------
+Experienced software developer with 5+ years of expertise in full-stack development, 
+specializing in React.js and Node.js. Proven track record of delivering scalable 
+web applications and leading development teams.
+
+WORK EXPERIENCE
+-------------
+Senior Software Developer | XYZ Tech Solutions, Kathmandu
+January 2021 - Present
+• Led development of enterprise-level web applications using React.js
+• Managed team of 5 developers, improving project delivery time by 30%
+• Implemented CI/CD pipelines reducing deployment time by 50%
+
+Software Developer | ABC Software, Kathmandu
+June 2018 - December 2020
+• Developed and maintained multiple client websites
+• Collaborated with UX team to implement responsive designs
+• Optimized database queries improving application performance by 40%
+
+EDUCATION
+--------
+Bachelor in Computer Engineering
+Tribhuvan University, Nepal
+2014 - 2018
+GPA: 3.8/4.0
+
+SKILLS
+-----
+• Programming: JavaScript, Python, Java
+• Frontend: React.js, Vue.js, HTML5, CSS3
+• Backend: Node.js, Express.js, Django
+• Database: MongoDB, PostgreSQL
+• Tools: Git, Docker, Jenkins
+
+CERTIFICATIONS
+------------
+• AWS Certified Developer Associate
+• MongoDB Certified Developer
+• Google Cloud Professional Developer</pre>
+			</div>
+
+			<div class="tips">
+				<h3>CV Writing Tips:</h3>
+				<ul>
+					<li>Keep it concise and relevant</li>
+					<li>Use bullet points for clarity</li>
+					<li>Include quantifiable achievements</li>
+					<li>Tailor for specific job applications</li>
+					<li>Proofread thoroughly</li>
+					<li>Use professional formatting</li>
+				</ul>
+			</div>
+
+			<div class="locations">
+				<h2>CV Writing Services</h2>
+				<div class="location-grid">
+					<div class="location-card">
+						<h3>Professional CV Writers</h3>
+						<p>Putalisadak, Kathmandu</p>
+						<p>Phone: +977-1-4421234</p>
+					</div>
+					<div class="location-card">
+						<h3>Career Solutions Nepal</h3>
+						<p>Kupondole, Lalitpur</p>
+						<p>Phone: +977-1-5553789</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.sample {
+		margin-bottom: 2rem;
+	}
+
+	.sample-text {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		white-space: pre-wrap;
+		font-family: monospace;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		overflow-x: auto;
+	}
+
+	.tips {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		margin: 2rem 0;
+	}
+
+	.tips ul {
+		margin-left: 1.5rem;
+	}
+
+	.tips li {
+		margin-bottom: 0.5rem;
+	}
+
+	.location-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.location-card {
+		background: #f8f9fa;
+		padding: 1.5rem;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.location-card h3 {
+		color: var(--primary-color);
+		margin-bottom: 0.5rem;
+	}
+
+	.location-card p {
+		margin-bottom: 0.5rem;
+		color: #666;
+	}
+
+	@media (max-width: 768px) {
+		.content {
+			padding: 1rem;
+		}
+	}
+</style>
